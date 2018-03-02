@@ -1,0 +1,45 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            {{#each burgers}}
+                {{#unless devoured}}
+                <div class="card card-inverse card-warning mb-3 ">
+                    <div class="card-block">
+                        <p class="card-text">{{burger_name}} </p>
+                         <button class="btn btn-success" data-id="{{id}}">Devour it!!!</button>
+                        
+                    </div>
+                </div>
+                <br />
+                {{/unless}}
+            {{/each}}
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            {{#each burgers}}
+                {{#if devoured}}
+                <div class="card card-inverse card-warning mb-3 ">
+                    <div class="card-block">
+                        <p class="card-text">{{burger_name}}</p>
+                    </div>
+                </div>
+                <br />
+                {{/if}}
+            {{/each}}
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <h2>Enter a burger you wan to Eat</h2>
+            <form class="create-form">
+                <div class="form-group">
+                    <div class="form-group">
+                    <input class="form-control" type="text" placeholder="Burger Name" id="bu" name="name">
+                    <br />
+                    <button class="addBurger btn btn-warning" type="submit">Add Burger</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"></div>
+    </div>
+</div>
