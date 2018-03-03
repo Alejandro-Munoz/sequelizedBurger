@@ -12,8 +12,6 @@ module.exports = function(app){
                 var hbsObject = {
                     burgers: allBurgers
                 }
-                // console.log("handelbarsObject",hbsObject);
-                // res.json(allBurgers);
                 res.render("index",hbsObject)
             });  
     });
@@ -30,7 +28,5 @@ module.exports = function(app){
                 id: req.params.id
             }
         }).then(burger => res.status(200).end())
-
-
     });
 }
