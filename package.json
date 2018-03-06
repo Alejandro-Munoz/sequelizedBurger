@@ -1,5 +1,5 @@
 {
-  "name": "burger",
+  "name": "sequelizedBurger",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Alejandro-Munoz/burger.git"
+    "url": "git+https://github.com/Alejandro-Munoz/sequelizedBurger.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Alejandro-Munoz/burger/issues"
+    "url": "https://github.com/Alejandro-Munoz/sequelizedBurger/issues"
   },
-  "homepage": "https://github.com/Alejandro-Munoz/burger#readme",
+  "homepage": "https://github.com/Alejandro-Munoz/sequelizedBurger#readme",
   "dependencies": {
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
